@@ -1,24 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useEffect, useReducer} from 'react';
+
 import './App.css';
+import Start from "./components/Start";
+import Finish from "./components/Finish";
+import Question from "./components/Question";
+import reducer from "./components/reducer";
+import {AppState} from "./components/types";
 
 function App() {
+
+
+    const initialState:AppState={
+        questions:[],
+        status:'loading'
+    }
+
+
+    const[{questions,status},dispatch]=useReducer(reducer,initialState)
+
+
+
+
+   useEffect(()=>{
+
+     fetch('http://localhost:5000/questions').then(res=>res.json()).then(data=>dispatch({type:'data',payload:data}))
+         .catch(error=>dispatch({type:'dataFailed'}))
+
+
+   },[])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+       <Question/>
     </div>
   );
 }

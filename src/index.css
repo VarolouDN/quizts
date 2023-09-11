@@ -5,9 +5,89 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+#root{
+ min-height: 100vh;
+
+
+
+}
+.app {
+  text-align: center;
+  background-color: oldlace;
+  margin: auto;
+  align-items: center;
+  min-height: 100vh;
+
+  justify-content: center;
+  display: flex;
+}
+
+.start{
+display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.startBtn{
+  display: block;
+width: 200px;
+ min-height: 40px;
+  border-radius: 10px;
+}
+.finish{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.finishBtn{
+  display: block;
+  width: 200px;
+  min-height: 40px;
+  border-radius: 10px;
+}
+.question{
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.progress{
+  min-width: 80%;
+}
+.questionBtn{
+  display: block;
+  margin: 10px;
+  width: 80%;
+  min-height: 40px;
+  border-radius: 10px;
+}
+
+.nextBtn{
+  display: block;
+  margin: 10px;
+  width: 30%;
+  min-height: 30px;
+  border-radius: 10px;
+}
+
+.answeredBtn{
+  background-color: grey;
+  cursor: not-allowed;
+}
+.correctBtn{
+  background-color: cornflowerblue;
+  cursor: not-allowed;
 }

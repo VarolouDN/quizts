@@ -1,0 +1,139 @@
+{
+  "questions": [
+    {
+      "question": "Which is the most popular JavaScript framework?",
+      "variants": ["Angular", "React", "Svelte", "Vue"],
+      "correctAnswer": 1,
+      "points": 1
+    },
+    {
+      "question": "Which company invented React?",
+      "variants": ["Google", "Apple", "Netflix", "Facebook"],
+      "correctAnswer": 3,
+      "points": 1
+    },
+    {
+      "question": "What's the fundamental building block of React apps?",
+      "variants": ["Components", "Blocks", "Elements", "Effects"],
+      "correctAnswer": 0,
+      "points": 1
+    },
+    {
+      "question": "What's the name of the syntax we use to describe the UI in React components?",
+      "variants": ["FBJ", "Babel", "JSX", "ES2015"],
+      "correctAnswer": 2,
+      "points": 1
+    },
+    {
+      "question": "How does data flow naturally in React apps?",
+      "variants": [
+        "From parents to children",
+        "From children to parents",
+        "Both ways",
+        "The developers decides"
+      ],
+      "correctAnswer": 0,
+      "points": 1
+    },
+    {
+      "question": "How to pass data into a child component?",
+      "variants": ["State", "Props", "PropTypes", "Parameters"],
+      "correctAnswer": 1,
+      "points": 1
+    },
+    {
+      "question": "When to use derived state?",
+      "variants": [
+        "Whenever the state should not trigger a re-render",
+        "Whenever the state can be synchronized with an effect",
+        "Whenever the state should be accessible to all components",
+        "Whenever the state can be computed from another state variable"
+      ],
+      "correctAnswer": 3,
+      "points": 1
+    },
+    {
+      "question": "What triggers a UI re-render in React?",
+      "variants": [
+        "Running an effect",
+        "Passing props",
+        "Updating state",
+        "Adding event listeners to DOM elements"
+      ],
+      "correctAnswer": 2,
+      "points": 1
+    },
+    {
+      "question": "When do we directly \"touch\" the DOM in React?",
+      "variants": [
+        "When we need to listen to an event",
+        "When we need to change the UI",
+        "When we need to add styles",
+        "Almost never"
+      ],
+      "correctAnswer": 3,
+      "points": 1
+    },
+    {
+      "question": "In what situation do we use a callback to update state?",
+      "variants": [
+        "When updating the state will be slow",
+        "When the updated state is very data-intensive",
+        "When the state update should happen faster",
+        "When the new state depends on the previous state"
+      ],
+      "correctAnswer": 3,
+      "points": 1
+    },
+    {
+      "question": "If we pass a function to useState, when will that function be called?",
+      "variants": [
+        "On each re-render",
+        "Each time we update the state",
+        "Only on the initial render",
+        "The first time we update the state"
+      ],
+      "correctAnswer": 2,
+      "points": 1
+    },
+    {
+      "question": "Which hook to use for an API request on the component's initial render?",
+      "variants": ["useState", "useEffect", "useRef", "useReducer"],
+      "correctAnswer": 1,
+      "points": 1
+    },
+    {
+      "question": "Which variables should go into the useEffect dependency array?",
+      "variants": [
+        "Usually none",
+        "All our state variables",
+        "All state and props referenced in the effect",
+        "All variables needed for clean up"
+      ],
+      "correctAnswer": 2,
+      "points":1
+    },
+    {
+      "question": "An effect will always run on the initial render.",
+      "variants": [
+        "True",
+        "It depends on the dependency array",
+        "False",
+        "In depends on the code in the effect"
+      ],
+      "correctAnswer": 0,
+      "points": 1
+    },
+    {
+      "question": "When will an effect run if it doesn't have a dependency array?",
+      "variants": [
+        "Only when the component mounts",
+        "Only when the component unmounts",
+        "The first time the component re-renders",
+        "Each time the component is re-rendered"
+      ],
+      "correctAnswer": 3,
+      "points": 1
+    }
+  ]
+}
