@@ -8,7 +8,16 @@ export type QuestionObject={
 export type Questions=QuestionObject[]
 export type AppState={
     questions:Questions,
-    status:string
+    status:string,
+    index:number,
+    answer:null | number,
+    points:number
 }
 
-export type Action={type:'data',payload:QuestionObject[]} | {type:'dataFailed'}
+export type Action={type:'data',payload:QuestionObject[]}
+    | {type:'dataFailed'}
+    | {type:'start'}
+    | {type:'answer',payload:number}
+     | {type:'nextAnswer'}
+    | {type:'finished'}
+    |  {type:'restart'}

@@ -35,12 +35,17 @@ display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+
 }
 .startBtn{
   display: block;
-width: 200px;
+width: 80%;
  min-height: 40px;
-  border-radius: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.startBtn:hover{
+  background-color: inherit;
 }
 .finish{
   display: flex;
@@ -53,7 +58,11 @@ width: 200px;
   display: block;
   width: 200px;
   min-height: 40px;
-  border-radius: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.finishBtn{
+  background-color: inherit;
 }
 .question{
 
@@ -65,6 +74,10 @@ width: 200px;
 }
 
 .progress{
+  min-width: 100%;
+  display: block;
+}
+.progressBar{
   min-width: 80%;
 }
 .questionBtn{
@@ -72,7 +85,11 @@ width: 200px;
   margin: 10px;
   width: 80%;
   min-height: 40px;
-  border-radius: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.beforeAnswer:hover{
+ background-color:inherit;
 }
 
 .nextBtn{
@@ -80,14 +97,22 @@ width: 200px;
   margin: 10px;
   width: 30%;
   min-height: 30px;
-  border-radius: 10px;
+  border-radius: 20px;
+  cursor: pointer;
 }
-
+.nextBtn:hover{
+  background-color: inherit;
+}
 .answeredBtn{
-  background-color: grey;
+  background-color:plum;
   cursor: not-allowed;
+  color: black;
+
 }
-.correctBtn{
+.correctBtn {
   background-color: cornflowerblue;
   cursor: not-allowed;
+  color: black;
+
+
 }
