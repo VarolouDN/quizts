@@ -28,7 +28,9 @@ function App() {
 
    useEffect(()=>{
 
-     fetch(/*'https://localhost5000/questions'*/'/data/data.json').then(res=>res.json()).then(data=>dispatch({type:'data',payload:data}))
+     fetch('/data.json').then(res=>res.json()).then(data=>{
+         console.log(data)
+         dispatch({type:'data',payload:data.questions})})
          .catch(error=>dispatch({type:'dataFailed'}))
 
 
